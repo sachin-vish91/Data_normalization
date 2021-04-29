@@ -6,7 +6,7 @@ import numpy as np
 def min_max_scaler(x,overall_min,overall_max):
     #overall_min = 45 # specify the global minimun from all the datasets
     #overall_max = 800 # specify the global maximum from all the datasets
-    x = (x - overall_min)/(overall_max-overall_min)
+    x = (x - overall_min)/(overall_max - overall_min)
     
     return x
 
@@ -14,7 +14,7 @@ def min_max_scaler(x,overall_min,overall_max):
 def de_normalize(x,overall_min,overall_max):
     #overall_min = 45 # specify the global minimun from all the datasets
     #overall_max = 800 # specify the global maximum from all the datasets
-    x = (x * (overall_max-overall_min)+overall_min)
+    x = (x * (overall_max - overall_min) + overall_min)
     
     return x
 
